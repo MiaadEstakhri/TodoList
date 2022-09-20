@@ -1,38 +1,112 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.App h1 {
+  margin-bottom: 30px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  width: 40rem;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 1rem;
 }
 
-.App-link {
-  color: #61dafb;
+.todo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 20rem;
+  margin: 10px 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.completed {
+  text-decoration: line-through;
+  color: #ccc;
+}
+
+.todoText {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+input {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  width: 220px;
+}
+
+input:focus {
+  border: 2px solid #7249b3;
+}
+
+.formControl {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 20rem;
+  margin-bottom: 20px;
+}
+
+.btn {
+  color: #6d28d9;
+  background-color: #fff;
+  border: 1px solid #6d28d9;
+  border-radius: 5px;
+  outline: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.remove {
+  color: #cf2a2a;
+  border: 1px solid #cf2a2a;
+  margin-left: 10px;
+}
+
+.addTodo {
+  color: #fff;
+  background-color: #6d28d9;
+}
+
+.editTodo {
+  background-color: #e7dff7;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+header span {
+  width: 20px;
+  height: 20px;
+  background-color: #ccc;
+  color: #6d28d9;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0 15px 10px 0;
+}
+
+.select {
+  width: 150px;
+  margin-left: 10px;
 }
