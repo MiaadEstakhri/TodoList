@@ -10,14 +10,16 @@ const Navbar = ({ unCompletedTodos, onChange, selectedOption }) => {
   if (!unCompletedTodos)
     return (
       <header>
-        <h2>Set your today todos!</h2>{" "}
+        <h2>Set your today todos!</h2>
       </header>
     );
 
   return (
     <header>
-      <span>{unCompletedTodos}</span>
-      <h2>Todos are not completed</h2>
+      <div className="nav-title">
+        <span>{unCompletedTodos}</span>
+        <h2>Todos are not completed</h2>
+      </div>
       <Select
         onChange={onChange}
         value={selectedOption}

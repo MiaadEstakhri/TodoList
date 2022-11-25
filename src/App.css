@@ -1,5 +1,5 @@
 .App {
-  width: 100vw;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -92,6 +92,11 @@ header {
   margin-bottom: 30px;
 }
 
+.nav-title {
+  display: flex;
+  justify-content: center;
+}
+
 header span {
   width: 20px;
   height: 20px;
@@ -107,6 +112,36 @@ header span {
 }
 
 .select {
-  width: 150px;
+  width: 140px;
   margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    width: 20rem;
+  }
+
+  .todo {
+    width: 18rem;
+  }
+
+  input {
+    width: 180px;
+  }
+
+  .formControl {
+    width: 18rem;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  header div h2 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+  }
 }
